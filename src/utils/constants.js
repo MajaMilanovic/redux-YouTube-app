@@ -2,6 +2,7 @@ const API_KEY = "AIzaSyB_IL7HH3TWwC6gabiyQuf-1w9THUlacbo";
 
 const SEARCH_VIDEOS = "SEARCH_VIDEOS";
 const SELECT_VIDEO = "SELECT_VIDEO";
+const ARCHIVE_VIDEO = "ARCHIVE_VIDEO";
 
 const embedVideoBaseUrl = "https://www.youtube.com/embed/";
 
@@ -13,6 +14,7 @@ export {
     API_KEY,
     SEARCH_VIDEOS,
     SELECT_VIDEO,
+    ARCHIVE_VIDEO,
     embedVideoBaseUrl,
     initialMessageForVideoList,
     initialMessageForSingleVideo,

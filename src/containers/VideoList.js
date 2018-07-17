@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { initialMessageForVideoList } from "../utils/constants";
 import { VideoListItem } from "../components/VideoListItem";
 import { selectVideo } from "../actions/select_action";
+import { archiveVideo } from "../actions/archive_action";
 import { bindActionCreators } from "redux";
 
 class VideoList extends Component {
@@ -25,6 +26,10 @@ class VideoList extends Component {
 
 
     selectVideo(video) {
+
+        //call action creator to archive video
+        this.props.archiveVideo(video);
+
         //call action creator and send video to reducer via action object;
         this.props.selectVideo(video);
     }
@@ -50,7 +55,7 @@ function mapStateToProps({ videoList }) {
 }
 
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators({ selectVideo }, dispatch);
+    return bindActionCreators({ archiveVideo, selectVideo }, dispatch);
 }
 
 

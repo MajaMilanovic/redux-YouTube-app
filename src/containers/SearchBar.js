@@ -19,7 +19,7 @@ class SearchBar extends Component {
         this.setState({ searchTerm });
 
         //call action creator
-        setTimeout(() => { this.props.searchVideos(searchTerm) }, 200);
+        setTimeout(() => { this.props.searchVideos(searchTerm) }, 300);
     }
 
 
