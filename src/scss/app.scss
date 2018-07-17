@@ -1,0 +1,27 @@
+@import "basic";
+@import "variables";
+@import "search";
+@import "single-video";
+@import "video-list";
+.wrapper-single-video {
+    width: 100%;
+    @media(min-width: 992px) {
+        display: inline-block;
+        width: 80%;
+    }
+    @media(min-width:1200px) {
+        width: 70%;
+    }
+}
+
+li {
+    list-style-type: none;
+    margin: 10px 0;
+    transition: background-color, 2s;
+    margin-top: 0;
+}
+
+li:hover {
+    background-color: $li-on-hover;
+    cursor: pointer;
+}
