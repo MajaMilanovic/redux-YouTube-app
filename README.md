@@ -12,4 +12,4 @@ $ npm install
 
 $ npm start
 
-You'll be able to see the app.
+You'll be able to see the app in the browser.
