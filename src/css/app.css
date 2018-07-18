@@ -54,6 +54,13 @@
   padding: 10px;
   vertical-align: top; }
 
+.list-previous-videos {
+  border-style: solid;
+  border-width: 1px 0px 1px;
+  border-color: #d8d8d8;
+  border-radius: 5px;
+  margin: 5px 0; }
+
 .div-initial-video-list {
   margin: 20px 0; }
 
@@ -69,6 +76,13 @@
   @media (min-width: 1200px) {
     .div-video-list {
       width: 30%; } }
+
+.search-result-video-list {
+  display: block;
+  margin: 10px 0; }
+  @media (min-width: 992px) {
+    .search-result-video-list {
+      display: none; } }
 
 .div-videoListItem {
   padding: 10px;

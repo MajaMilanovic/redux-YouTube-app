@@ -3,8 +3,6 @@ import { connect } from "react-redux";
 import { embedVideoBaseUrl, initialMessageForSingleVideo } from "../utils/constants";
 import { selectVideo } from "../actions/select_action";
 import { bindActionCreators } from "redux";
-import { VideoListItem } from "../components/VideoListItem";
-
 
 class SingleVideo extends Component {
     constructor(props) {
@@ -13,14 +11,7 @@ class SingleVideo extends Component {
     }
 
 
-    renderVideoHistory(historyList) {
-
-        const recentVideos = [... new Set(historyList)];
-
-        const recentVideosToDisplay = recentVideos.filter(video => {
-            return JSON.stringify(video) !== JSON.stringify(this.props.selectedVideo);
-        })
-
+    renderVideoHistory(recentVideosToDisplay) {
         return recentVideosToDisplay.map(video => {
             return (<li
                 onClick={() => { this.props.selectVideo(video) }}
@@ -50,9 +41,13 @@ class SingleVideo extends Component {
                 <p className="p-single-video-description">{description}</p>
                 {(this.props.videoHistory.length < 2)
                     ? ""
-                    : <ul>
-                        {this.renderVideoHistory(this.props.videoHistory)}
-                    </ul>}
+                    : <div>
+                        <p>Previous videos: </p>
+                        <ul className="list-previous-videos">
+                            {this.renderVideoHistory(this.props.videoHistory)}
+                        </ul>
+                    </div>
+                }
             </div>
 
         )

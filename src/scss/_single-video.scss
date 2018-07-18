@@ -26,3 +26,11 @@
     padding: 10px;
     vertical-align: top;
 }
+
+.list-previous-videos {
+    border-style: solid;
+    border-width: 1px 0px 1px;
+    border-color: $li-on-hover;
+    border-radius: 5px;
+    margin: 5px 0;
+}

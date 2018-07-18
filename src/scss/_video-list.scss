@@ -16,6 +16,14 @@
     }
 }
 
+.search-result-video-list {
+    display: block;
+    margin: 10px 0;
+    @media(min-width: 992px) {
+        display: none;
+    }
+}
+
 .div-videoListItem {
     padding: 10px;
     padding-top: 0;

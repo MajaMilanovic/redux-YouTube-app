@@ -42,6 +42,7 @@ class VideoList extends Component {
 
         return (
             <div className="div-video-list">
+                <p className="search-result-video-list">Search results:</p>
                 <ul>
                     {this.renderVideoList(this.props.videoList)}
                 </ul>
