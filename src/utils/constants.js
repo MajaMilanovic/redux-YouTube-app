@@ -1,4 +1,6 @@
-const API_KEY = "AIzaSyB_IL7HH3TWwC6gabiyQuf-******";
+import key from "./key";
+
+const API_KEY = key;
 
 const SEARCH_VIDEOS = "SEARCH_VIDEOS";
 const SELECT_VIDEO = "SELECT_VIDEO";
