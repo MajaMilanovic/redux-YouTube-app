@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyB_IL7HH3TWwC6gabiyQuf-1w9THUlacbo";
+const API_KEY = "AIzaSyB_IL7HH3TWwC6gabiyQuf-******";
 
 const SEARCH_VIDEOS = "SEARCH_VIDEOS";
 const SELECT_VIDEO = "SELECT_VIDEO";
