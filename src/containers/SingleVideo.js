@@ -11,7 +11,12 @@ class SingleVideo extends Component {
     }
 
 
-    renderVideoHistory(recentVideosToDisplay) {
+    renderVideoHistory(recentVideos) {
+
+        const recentVideosToDisplay = recentVideos.filter(video => {
+            return JSON.stringify(video) !== JSON.stringify(this.props.selectedVideo);
+        })
+
         return recentVideosToDisplay.map(video => {
             return (<li
                 onClick={() => { this.props.selectVideo(video) }}
