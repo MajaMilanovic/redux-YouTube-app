@@ -6,7 +6,8 @@ import { SEARCH_VIDEOS } from "../utils/constants";
 export default function (state = [], action) {
     switch (action.type) {
         case SEARCH_VIDEOS:
-            return action.payload;
+            return action.payload; 
+        default:
+            return state;
     };
-    return state;
 };
